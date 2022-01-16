@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Create Account</title>
+    <!--link to a stylesheet-->
+<link rel= "stylesheet" href = "form.css"/>
+</head>
+
+<body>
+    <div class="container">
+    <h2 class="title">Personal Details</h2>
+    
+    <div class="content">
+    <!--form with inputs and selectors for stylesheet-->
+    <form action=#>
+    <div class = "user-details">
+    
+        <div class = "input-box">
+        <span class = "details">Name</span>
+        <input id = "fname" placeholder = "Enter your name" type= "text"/>
+        </div>
+    
+        <div class = "input-box">
+        <span class = "details">Age</span>
+        <input id="age" placeholder= "Enter your age" type= "number"/>
+        </div>
+      
+        <div class = "input-box">
+        <span class = "details">Date of Birth</span>
+        <input id="dob" type= "date"/>
+        </div>
+
+        <div class = "input-box">
+        <span class = "details">Gender</span>
+        <!--Creating dropdown box for gender-->
+        <select class = "input-box" id = "gen">
+                <option>----Select your Gender----</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Transgender">Transgender</option>
+        </select>
+        </div>
+        <div class="button">
+        <!--assign event to a Submit button-->
+        <input onclick= "Form()" type="Submit" value="Submit">
+        </div>
+        </div>
+      
+    </div>
+    </form>
+    <!--creating table-->
+     <table border=1 id = "display">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>&times;</th>
+         </tr>
+         </thead> 
+         <tbody>
+         </tbody>
+    </table>
+    </div>
+</div> 
+    <!--link to a JavaScript file-->
+    <script src="form.js"></script>
+</body>
+</html>
